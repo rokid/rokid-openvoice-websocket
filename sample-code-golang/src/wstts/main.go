@@ -14,7 +14,7 @@ import (
 )
 
 var (
-	host   = flag.String("host", "ws://apigw.open.rokid.com:8444", "Server address")
+	host   = flag.String("host", "wss://apigwws.open.rokid.com/api", "Server address")
 	lang   = flag.String("lang", "zh", "Language")
 	codec  = flag.String("codec", "opu2", "Codec")
 	text   = flag.String("text", "今天天气怎么样?", "Tts Text")

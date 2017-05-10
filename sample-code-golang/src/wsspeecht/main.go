@@ -13,7 +13,7 @@ import (
 )
 
 var (
-	host   = flag.String("host", "ws://apigw.open.rokid.com:8444", "Server address")
+	host   = flag.String("host", "wss://apigwws.open.rokid.com/api", "Server address")
 	lang   = flag.String("lang", "zh", "Language")
 	vt     = flag.String("vt", "", "Voice trigger")
 	text   = flag.String("text", "", "Text")

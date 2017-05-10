@@ -14,12 +14,11 @@ import (
 )
 
 var (
-	host   = flag.String("host", "ws://apigw.open.rokid.com:8444", "Server address")
+	host   = flag.String("host", "wss://apigwws.open.rokid.com/api", "Server address")
 	lang   = flag.String("lang", "zh", "Language")
 	codec  = flag.String("codec", "pcm", "Codec")
 	fname  = flag.String("file", "", "Audio file")
 	authit = flag.Bool("auth", false, "Need auth?")
-	tls    = flag.Bool("tls", false, "Need tls?")
 	count  = flag.Int("count", 1, "Test count")
 )
 
