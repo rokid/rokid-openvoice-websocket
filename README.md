@@ -145,12 +145,12 @@ message SpeechResponse {
 | device_id      | string | 设备ID                   | 无，必填 |
 | service        | string | asr,tts,spch            | 无，必填 |
 | version        | string | 接口版本号                  | 无，必填 |
-| time           | string | unix时间戳                | 无，必填 |
+| timestamp           | string | unix时间戳                | 无，必填 |
 | sign           | string | 由以上几项+secret按约定的加密方式生成 | 无，必填 |
 
 sign的生成加密方式：
 
-key={key}&device_type_id={device_type_id}&device_id={device_id}&service={service}&version={version}&time={time}&secret={secret}
+key={key}&device_type_id={device_type_id}&device_id={device_id}&service={service}&version={version}&time={timestamp}&secret={secret}
 
 的utf8字符串的md5值
 
