@@ -7,8 +7,8 @@ Rokid openvoice开放服务(websocket版)包含以下四部分功能，
 
 - 设备认证
 - 语音转文字（ASR）
-- 语义理解（NLU）
 - 自然语言合成（TTS）
+- 完整语音交互(SPCH)
 
 ## 文档简介
 
