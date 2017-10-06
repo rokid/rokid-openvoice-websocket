@@ -1,7 +1,7 @@
 # rokid-openvoice-websocket
 ## 开放平台接口定义文档(websocket版)
 
-> 文档版本:V0.1
+> 文档版本:V0.2
 
 Rokid openvoice开放服务(websocket版)包含以下四部分功能，
 
