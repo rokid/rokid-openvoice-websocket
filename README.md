@@ -3,7 +3,7 @@
 
 > 文档版本:V0.2
 
-Rokid openvoice开放服务(websocket版)包含以下四部分功能，
+Rokid openvoice开放服务(websocket版)包含以下三部分功能，
 
 - 设备认证
 - 自然语言合成（TTS）
@@ -14,6 +14,9 @@ Rokid openvoice开放服务(websocket版)包含以下四部分功能，
 此文档用于定义开放平台上云端应用接口开发协议，协议遵循 [websocket](https://zh.wikipedia.org/zh-cn/WebSocket) 协议。
 
 ## Speech 接口
+
+### 服务器地址
+[wss://apigwws.open.rokid.com/api](wss://apigwws.open.rokid.com/api)
 
 ### protobuf 定义
 详见[protobuf](https://github.com/Rokid/rokid-openvoice-websocket/tree/master/protobuf)
