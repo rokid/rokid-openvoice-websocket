@@ -80,7 +80,8 @@ PCM格式为 RIFF (little-endian) data, WAVE audio, Microsoft PCM, 16 bit, mono 
 
 ### SpeechRequest
 
-请求响应
+PCM格式为 RIFF (little-endian) data, WAVE audio, Microsoft PCM, 16 bit, mono 16000 Hz语音。 
+注意，这里的PCM与Tts的PCM格式不一致，因此不能将tts的输出直接作为asr的输入。
 
 | 参数     | 类型        | 描述                   | 默认值  |
 | ------ | --------- | -------------------- | ---- |
