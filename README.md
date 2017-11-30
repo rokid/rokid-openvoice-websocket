@@ -58,6 +58,7 @@ key及secret由开发方通过管理平台获取，并保管。
 
 PCM格式为 RIFF (little-endian) data, WAVE audio, Microsoft PCM, 16 bit, mono 24000 Hz语音。
 注意，这里的PCM与Asr的PCM格式不一致，因此不能将tts的输出直接作为asr的输入。
+可以使用 sox -t s16 -c 1 -r 24000 xxx.pcm xxx.wav 将pcm转成wav。
 
 | 参数     | 类型        | 描述                   | 默认值  |
 | ------ | --------- | -------------------- | ---- |
@@ -82,6 +83,7 @@ PCM格式为 RIFF (little-endian) data, WAVE audio, Microsoft PCM, 16 bit, mono 
 
 PCM格式为 RIFF (little-endian) data, WAVE audio, Microsoft PCM, 16 bit, mono 16000 Hz语音。 
 注意，这里的PCM与Tts的PCM格式不一致，因此不能将tts的输出直接作为asr的输入。
+可以使用 sox -t s16 -c 1 -r 16000 xxx.pcm xxx.wav 将pcm转成wav。
 
 | 参数     | 类型        | 描述                   | 默认值  |
 | ------ | --------- | -------------------- | ---- |
