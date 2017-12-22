@@ -29,7 +29,7 @@ Rokid openvoice开放服务(websocket版)包含以下三部分功能，
 | key            | string | 开放接口Key,在管理平台获取        | 无，必填 |
 | device_type_id | string | 设备类型ID                 | 无，必填 |
 | device_id      | string | 设备ID                   | 无，必填 |
-| service        | string | asr,tts,spch            | 无，必填 |
+| service        | string | asr,tts,speech            | 无，必填 |
 | version        | string | 接口版本号                  | 无，必填 |
 | timestamp      | string | unix时间戳                | 无，必填 |
 | sign           | string | 由以上几项+secret按约定的加密方式生成 | 无，必填 |
