@@ -9,6 +9,7 @@ message TtsRequest {
   required string text = 2;
   optional string declaimer = 3;
   optional string codec = 4;
+  optional uint32 sample_rate = 5;
 }
 
 message TtsResponse {
