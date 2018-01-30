@@ -60,12 +60,17 @@ PCM格式为 RIFF (little-endian) data, WAVE audio, Microsoft PCM, 16 bit, mono 
 注意，这里的PCM与Asr的PCM格式不一致，因此不能将tts的输出直接作为asr的输入。
 可以使用 sox -t s16 -c 1 -r 24000 xxx.pcm xxx.wav 将pcm转成wav。
 
+或者
+
+请求时将 sample_rate 设置为16000，则返回16k的语音数据，可以直接作为asr的输入。
+
 | 参数     | 类型        | 描述                   | 默认值  |
 | ------ | --------- | -------------------- | ---- |
 | id        | int32  | 唯一标识，用于跟踪一个完整的请求，处理及响应事件。   | 0    |
 | text   | string    | 需要转换的text文本          | 无    |
 | declaimer | string | 发音者，如"zh","zhangsan","rose" | "zh" |
 | codec     | string | 语音流的编码，目前支持PCM，OPU，OPU2。    | 无  |
+| sample_rate     | uint32 | 语音流的比特率，目前支持24000，16000。    | 24000  |
 
 ### TtsResponse
 
@@ -104,6 +109,8 @@ PCM格式为 RIFF (little-endian) data, WAVE audio, Microsoft PCM, 16 bit, mono 
 | trigger_start   | float | 语音流的激活词的开始位置。  | 无   |
 | trigger_length   | float | 语音流的激活词的长度。  | 无   |
 | skill_options  | string | 设备上的状态信息，为json结构，此结构会传给相应的skill的cloud app中。         | 空     |
+| voice_extra  | string | 设备上的语言的额外信息，为json结构，此结构会传给asr中。         | 空     |
+| vad_begin  | uint32 | asr会将语音从 vad_begin ms开始识别，之前的数据丢弃。         | 0     |
 
 ### SpeechResponse
 
