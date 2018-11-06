@@ -18,10 +18,25 @@ enum ReqType {
   VOICE = 1;
   END = 2;
   TEXT = 3;
+  ONESHOT = 4;
 }
 
 enum Codec {
   PCM = 0;
   OPU = 1;
   OPU2 = 2;
+  OPUS = 3;
+  AMRNB = 4;
+  AMRWB = 5;
+  PCM8K = 6;
+}
+
+message PingPayload {
+	required int32 req_id = 1;
+  // timepoint of now
+  required uint64 now_tp = 2;
+	// timepoint of request send
+  required uint64 req_tp = 3;
+	// timepoint of response recv
+  required uint64 resp_tp = 4;
 }
